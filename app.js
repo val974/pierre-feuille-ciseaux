@@ -1,4 +1,5 @@
 var nomutilisateur=prompt ("entrer votre nom");
+do {
 var choixutilisateur = prompt ("Choisissez entre pierre,feuille et ciseaux");
 var choixOrdi = Math.random ();
 
@@ -58,3 +59,6 @@ var comparer =function(choix1,choix2) {
 
 }
 comparer (choixutilisateur,choixOrdi);
+continuer = confirm("veux-tu rejouer ?");
+}
+while (continuer)
